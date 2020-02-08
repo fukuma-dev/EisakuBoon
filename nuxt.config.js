@@ -45,8 +45,8 @@ export default {
    ** Build configuration
    */
   build: {
-    transpile: ['vuetify/lib'],
-    plugins: [new VuetifyLoaderPlugin()],
+    // transpile: ['vuetify/lib'],
+    // plugins: [new VuetifyLoaderPlugin()],
     /*
      ** You can extend webpack config here
      */
