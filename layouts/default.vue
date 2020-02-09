@@ -1,6 +1,14 @@
 <template>
   <v-app>
-    <h1>EisakuBoon!!</h1>
+    <custom-header v-if="$route.name !== 'index'" />
     <nuxt />
   </v-app>
 </template>
+
+<script>
+export default {
+  components: {
+    CustomHeader: () => import('~/components/TheHeader.vue')
+  }
+}
+</script>
