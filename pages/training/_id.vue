@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-center wrapper">
     <div v-if="!isStart">
       <v-btn
         @click="
@@ -11,7 +11,7 @@
       </v-btn>
     </div>
     <div v-if="isStart">
-      <p>{{ phrase[num].jp }}</p>
+      <p class="jp-phrase">{{ phrase[num].jp }}</p>
       <v-btn
         v-if="!isAnswer"
         @click="
@@ -22,7 +22,7 @@
         答え
       </v-btn>
       <div v-if="isAnswer">
-        <p>{{ phrase[num].en }}</p>
+        <p class="en-phrase">{{ phrase[num].en }}</p>
         <v-btn
           @click="
             next()
@@ -73,3 +73,15 @@ export default {
   }
 }
 </script>
+
+<style>
+.wrapper {
+  margin: 100px 0;
+}
+.jp-phrase {
+  font-size: 1.5rem;
+}
+.en-phrase {
+  font-size: 1.5rem;
+}
+</style>
