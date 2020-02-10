@@ -47,7 +47,7 @@ export default {
    */
   webfontloader: {
     google: {
-      families: ['Fugaz+One']
+      families: ['Fugaz+One', 'M+PLUS+Rounded+1c']
     }
   },
 
