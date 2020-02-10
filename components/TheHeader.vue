@@ -1,5 +1,5 @@
 <template>
-  <v-card flat height="100px">
+  <v-card flat height="80px">
     <v-toolbar height="80px">
       <v-toolbar-title to="/" class="toolbar-title">
         EisakuBoon!!
